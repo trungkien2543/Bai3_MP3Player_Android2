@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MP3_Player"
+        android:textSize="40sp"
+        android:id="@+id/TextTile"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="#A39D9D"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:padding="15dp"
+        android:id="@+id/textAlbum"
+        android:layout_below="@id/TextTile"
+        android:text="Album: "
+        android:textColor="#A39D9D"/>
+
+    <Spinner
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/textAlbum"
+        android:layout_below="@id/TextTile"
+        android:id="@+id/spinnerAlbum"/>
+
+    <TextView
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Music"
+        android:textSize="30sp"
+        android:id="@+id/TextListMusic"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/textAlbum"
+        android:textColor="#A39D9D"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListMusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/TextListMusic"/>
+
+
+
+
+</RelativeLayout>
